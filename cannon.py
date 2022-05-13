@@ -1,6 +1,6 @@
 """
 Juego: Cannon
-Programador 1: 
+Programador 1: Misael Chavez Ramos
 Programador 2: Rodrigo García Estrada
 
 Fecha: 9 / mayo / 2022
@@ -68,9 +68,12 @@ def move():
 
     draw()
 
-    for target in targets:
-        if not inside(target):
-            return
+    #Comentamos esta funcion para que el juego continue aunque el 
+    # target se pase del limite
+
+    # for target in targets:
+    #     if not inside(target):
+    #         return
 
     ontimer(move, 50)
 
